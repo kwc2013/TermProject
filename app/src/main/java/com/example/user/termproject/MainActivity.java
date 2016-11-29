@@ -13,29 +13,29 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final Intent MapInt = new Intent(this, MapActivity.class);
-        final Intent RevInt = new Intent(this, TotalActivity.class);
-        final Intent DetInt = new Intent(this, AddActivity.class);
+        final Intent Map = new Intent(this, MapActivity.class);
+        final Intent Total = new Intent(this, TotalActivity.class);
+        final Intent Add = new Intent(this, AddActivity.class);
 
         Button MapBtn = (Button) findViewById(R.id.mapbtn);
         Button LogBtn = (Button) findViewById(R.id.logbtn);
-        Button AddBtn = (Button) findViewById(R.id.addbtn);
+        Button AddBtn = (Button) findViewById(R.id.mapaddlogbtn);
 
         MapBtn.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
-                startActivity(MapInt);
+                startActivity(Map);
             }
         });
 
         LogBtn.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
-                startActivity(RevInt);
+                startActivity(Total);
             }
         });
 
         AddBtn.setOnClickListener(new Button.OnClickListener() {
             public void onClick(View v) {
-                startActivity(DetInt);
+                startActivity(Add);
             }
         });
 

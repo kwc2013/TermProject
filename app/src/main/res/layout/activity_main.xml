@@ -16,14 +16,14 @@
         android:layout_height="wrap_content"
         android:id="@+id/logbtn"
         android:layout_marginBottom="100dp"
-        android:layout_alignBottom="@+id/addbtn"
+        android:layout_alignBottom="@+id/mapaddlogbtn"
         android:layout_centerHorizontal="true" />
 
     <Button
         android:text="Add_Logger"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/addbtn"
+        android:id="@+id/mapaddlogbtn"
         android:layout_marginBottom="35dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
